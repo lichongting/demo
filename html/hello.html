@@ -4,103 +4,213 @@
 		<meta charset="UTF-8"/>
 		<title>Document</title>
 		<link rel="shortcut icon" href="http://g.alicdn.com/trip/tools/img/favicon.ico" type="image/x-icon"/>
+		
+		<style type="text/css">
+			/*
+			div {
+				
+				border-top:10px solid #000;
+				border-right: 10px solid #000;
+				border-bottom: 10px solid #000;
+				border-left: 10px solid #000;
+				border-color: #000;
+				border-width: 10px;
+				border-style: solid;
+
+				border-left-color: #000;
+				
+				border: 10px solid #000;
+				
+				padding-top: 10px;
+				padding-right: 10px;
+				padding-bottom: 10px;
+				padding-left: 10px;
+
+				padding: 10px;
+
+				padding: 10px 20px;
+
+				padding: 10px 20px 30px 40px;
+
+				margin-top: 10px;
+				margin-right: 10px;
+				margin-bottom: 10px;
+				margin-left: 10px;
+
+				margin:10px;
+				margin:10px 20px;
+				margin:10px 20px 30px 40px;
+
+				width: 10px;
+				height: 10px;
+
+				border-radius: 50%;
+				
+			}
+			
+			div > span {
+				padding-left: 40px;
+				padding-top: 40px;
+				width: 500px;
+				margin-top: 40px;
+				margin-left: 100px;
+				margin-right: 100px;
+			}
+			
+			img {
+				border-radius: 50%;
+				width: 200px;
+				height: 200px;
+			}
+			*/
+		.clearfix:after {
+			content: ".";
+			display: block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+		.clearfix {
+			display: inline-block;
+		}
+		html[xmlns] .clearfix {
+			display: block;
+		}
+		* html .clearfix {
+			height: 1%;
+		}
+
+			.left, .right{
+				border: 2px solid #000;
+				width: 500px;
+			}
+			.left {
+				float:left;
+			}
+			.right {
+				float: left;
+			}
+
+			.box {
+				border:2px solid #000;
+				width: 500px;
+				height: 500px;
+				
+			}
+			.inner {
+				border:2px solid #789;
+				width: 100px;
+				height: 100px;
+				position: absolute;
+				right: 100px;
+				bottom: 100px;
+			}
+			.wrapper {
+				border: 2px solid #000;
+				width: 800px;
+				height: 800px;
+				position: relative;
+			}
+			.tb-shop-info {
+				width: 198px;
+				height: 500px;
+				margin-top: 150px;
+				border: 1px solid rgb(255, 216, 216);
+				position: relative;
+			}
+			.tb-shop-info > a {
+				display: inline-block;
+				width: 48px;
+				height: 63px;
+				position: absolute;
+				right: 20px;
+				top: -10px;
+				background: url(images/TB14n8xFVXXXXb0XXXXOX6EHXXX-48-63.png) no-repeat;
+			}
+			.box-1 {
+				border: 1px solid #000;
+				width: 300px;
+				height: 500px;
+			}
+			.box-1 > div {
+				border: 2px solid red;
+				width: 100px;
+				height: 100px;
+			}
+			.box-1 > div.middle {
+				position: relative;
+				left: 200px;
+				top:20px;
+			}
+			.box-2 {
+				border: 1px solid #ccc;
+				width: 20px;
+				background: blue;
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				top:0;
+			}
+			a {
+				text-decoration: none;
+			}
+			.menu {
+				list-style: none;
+			}
+			.menu > li {
+				float: left;
+				padding: 0 10px;
+			}
+			.menu > li > a {
+				color: #333;
+				font-weight: 800;
+				padding: 5px 8px;
+				border-radius: 15px;
+			}
+			.menu > li > a:hover {
+				background: #FF6203;
+				color: #fff;
+			}
+		</style>
 	</head>
 	<body>
-		<form action="https://www.baidu.com/s" method="get">
-				<input type="text" name="wd" value="123" />
-				<input type="text" name="abc" />
-				<textarea name=""></textarea>
-
-				<label>
-				<input type="radio" name="sex" value="男" />男
-				</label>
-
-
-				
-				<input id="demo" type="radio" name="sex" value="女"/><label for="demo">女</label>
-
-				<label><input type="checkbox" name="hobby" />篮球</label>
-				<input type="checkbox" name="hobby" />足球<br/>
-
-				<select name="p">
-					<optgroup label="陕西">
-						<option value="sx">咸阳</option>
-						<option value="xa">西安</option>
-					</optgroup>
-					<optgroup label="四川">
-							<option>成都</option>
-							<option>绵阳</option>
-					</optgroup>
-				</select>
-
-				<!-- 
-				<input type="password" /><br/>
-				-->
-				<input type="reset" value="重置" />
-				<input type="submit" value="搜索" />
-				<input type="button" value="这是普通按钮"/>
-				<button>这也是普通按钮</button>
-		</form>
-		<a href="https://www.baidu.com"  target="_blank" title="这是title属性">百度</a>
-		<ul>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
+		<ul class="menu clearfix">
+			<li><a href="#">淘抢购</a></li>
+			<li><a href="#">电器城</a></li>
+			<li><a href="#">司法拍卖</a></li>
+			<li><a href="#">中国质造</a></li>
+			<li><a href="#">特色中国</a></li>
 		</ul>
-		<ol>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-				<li>这是新闻标题</li>
-		</ol>
+
+		<div class="box-2">
+		</div>
+		<div class="box-1">
+			<div>div-01</div>
+			<div class="middle">div-02</div>
+			<div>div-03</div>
+		</div>
+		<div class="tb-shop-info">
+			<img src="images/TB1AnS2KXXXXXaCXVXXxwHxIVXX-198-60.png"/>
+			<a href="#"></a>
+		</div>
+
+		<div class="wrapper">
+			<div class="box">
+				<div class="inner">
+					box
+				</div>
+				<div>
+					随意
+				</div>
+			</div>
+		</div>
+		<!--
+		<div class="clearfix">
+			<div class="left">div-01</div>
+			<div class="right">div-02</div>
+		</div>
+		-->
 		
-		<del>998</del>
-     	<br/>
-		<strong>98</strong>
-		<s>998</s>
-		<span style="font-size: 18px;color:blue;"><b>勇气1</b></span>
-		
-		<h1>勇&nbsp;&nbsp;&nbsp;&lt;/html&gt;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;气</h1>
-
-
-		<h2>勇气</h2>
-
-		<h3>勇气</h3>
-
-
-		<pre>
-				asdfasdf     
-				东奔西走
-
-
-				顶替
-				顶替     枯
-		</pre>
-
-
-
-
-
-
-
-		<h4>勇气</h4>
-		<h5>勇气</h5>
-		<h6>勇气</h6>
-
-
-		<p>党的十八大以来，短短5年，在我军90年光辉历程中如此厚重、极不平凡——党在新形势下的强军目标鲜明确立，政治建军深入推进，练兵备战紧锣密鼓，改革攻坚大刀阔斧，正风肃纪雷霆万钧……习主席领导和指引人民军队全面重塑、浴火重生，在强军兴军征程上迈出历史性步伐。</p>
-		<blockquote>明月出天山，苍茫云海间。长风几万里，吹度玉门关。汉下白登道，胡窥青海湾。由来征战地，不见有人还。 戍客望边色，思归多苦颜。高楼当此夜，叹息未应闲。明月出天山，苍茫云海间。长风几万里，吹度玉门关。汉下白登道，胡窥青海湾。由来征战地，不见有人还。 戍客望边色，思归多苦颜。高楼当此夜，叹息未应闲。明月出天山，苍茫云海间。长风几万里，吹度玉门关。汉下白登道，胡窥青海湾。由来征战地，不见有人还。 戍客望边色，思归多苦颜。高楼当此夜，叹息未应闲。</blockquote>
-		<p>关山重重的新长征，离不开登高望远的领路人。作为<strong>党中央的核心</strong>、全党的核心、<b>人民军队最高统帅</b>，习主席以马克思主义政治家的政治智慧、理论勇气、卓越才能和驾驭全局能力，大气魄治党治国治军，大视野运筹国内国际大局，大手笔推动改革发展稳定，党、国家和军队面貌发生巨大变化，赢得人民群众和全军官兵发自内心的爱戴。</p>
-		<!-- 这是注释 -->
-		//
-		/*****/
-
-		<img src="images/4ed3c7756f04797902ebf7b5e327123c.jpg" />
-
 	</body>
 </html>
