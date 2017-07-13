@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Test</title>
+<style > 
+	.clearfix:after {
+		content: ".";
+		display: block;
+		clear: both;
+		visibility: hidden;
+		line-height: 0;
+		height: 0;
+	}
+	.clearfix {
+		display: inline-block;
+	}
+	html[xmlns] .clearfix {
+		display: block;
+	}
+	* html .clearfix {
+		height: 1%;
+	}
+	li{
+		float: left;
+		border:2px red;
+		list-style: none;
+		padding: 5px;
+
+	}
+
+	li> a:hover{
+		background: black;
+	}
+
+	a .show{
+		visibility: hidden;
+		width: 120px;
+		height: 120px;
+	    background-color: black;
+	    color: #fff;
+	    text-align: center;
+	    border-radius: 6px;
+	    padding: 5px 0;
+	    position: absolute;
+    	z-index: 1;
+    	top: -50%;
+    	left: 100%;
+
+	}
+	a:hover .show {
+		visibility: visible;
+	}
+	a {
+		border-bottom: 1px dotted black;
+	}
+
+
+
+
+
+</style>
+</head>
+<body>
+<div class="clearfix">
+<ul style="position: relative;">
+	<li><a href="#">a <div class="show">这里面不想写了</div> </a> </li>
+	<li><a href="#">b <div class="show">换个字说明我有写</div></a></li>
+	<li><a href="#">c <div class="show">同上</div></a></li>
+	<li><a href="#">d<div class="show">真不写了</div></a></li>
+</ul>
+<ul style="position: relative;">
+	<li><a href="#">a <div class="show">第二行演示一个</div> </a> </li>
+</ul>
+</div>
+
+</body>
+</html>
