@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset = "gbk"/>
+<style type = "text/css">
+
+ul.ul1 li{
+	float:left;
+	list-style-type:none;
+	padding:5px;
+}
+
+ul.ul1 a{
+	text-decoration:none;
+	display:inline-block;
+	margin-left:5px;
+	color:#000;
+	font-size:20px;
+	font-weight:bold;
+	font-family:"微软雅黑";
+	padding:15px;
+	border-radius:25px;
+	
+	
+}
+
+ul.ul1 a:hover{
+	color:#fff;
+	background-color:#ff9933;
+}
+
+.img1{
+	width:200px;
+	height:300px;
+	padding-left:50px;
+	
+}
+
+ul.ul2 li{
+	float:left;
+	list-style-type:none;
+	
+}
+
+ul.ul2 img{
+	width:50px;
+	height:50px;
+	margin:5px;
+}
+
+ul.ul2 img:hover{
+	border-style:solid;
+	border-width:3px;
+	border-color:#ff9933;
+	margin:2px;
+}
+
+.div-div1{
+	border-style:solid;
+	border-color:red;
+	border-radius:10px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+.div-div2{
+	width:300px;
+	height:300px;
+	
+	margin-left:45px;
+	background-color:#eeeeee;
+}
+
+.div-div3{
+	border-style:solid;
+	border-color:#dddddd;
+	border-width:1px;
+	margin-top:20px;
+	margin-bottom:20px;
+	
+	float:left;
+	width:600px;
+	height:600px;
+}
+
+.div-div4{
+	float:left;
+	border-style:solid;
+	border-color:#dddddd;
+	border-width:1px;
+	width:300px;
+	height:600px;
+	margin-top:20px;
+	margin-bottom:20px;
+	background:url(TB1KcJOFVXXXXb5XXXXTnAu0VXX-396-120.png)	no-repeat;
+	position:relative;
+}
+
+.a-img1{
+	position:absolute;
+	left:250px;
+	top:-20px;	
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+.clearfix {
+	display: inline-block;
+}
+html[xmlns] .clearfix {
+	display: block;
+}
+* html .clearfix {
+	height: 1%;
+}
+
+
+</style>
+</head>
+<body style = "width:1500px;">
+<div>
+<div class = "div-div1">
+<ul class = "ul1 clearfix">
+<li><a href = "#">淘抢购</a></li>
+<li><a href = "#">电器城</a></li>
+<li><a href = "#">司法拍卖</a></li>
+<li><a href = "#">中国制造</a></li>
+<li><a href = "#">特色中国</a></li>
+</ul>
+</div>
+
+<div class = "div-div3">
+<div style = "padding:10px;">
+<div class = "div-div2">
+<a href = "#" ><img src = "ul1.jpg"	 class = "img1"/></a>
+</div>
+<ul class = "ul2 clearfix">
+<li><a href = "#"><img src = "ul1.jpg"/></a></li>
+<li><a href = "#"><img src = "ul2.jpg"/></a></li>
+<li><a href = "#"><img src = "ul3.jpg"/></a></li>
+<li><a href = "#"><img src = "ul4.jpg"/></a></li>
+<li><a href = "#"><img src = "ul5.jpg"/></a></li>
+</div>
+
+</div>
+<div  class = "div-div4 clearfix" >
+<a href	= "#" class = "a-img1"><img src = "TB14n8xFVXXXXb0XXXXOX6EHXXX-48-63.png"/></a>
+
+</div>
+</div>
+</body>
+</html>

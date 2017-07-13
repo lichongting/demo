@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>CssPractice</title>
+		
+		
+		<style type="text/css">
+			
+		.clearfix:after {
+			content: ".";
+			display: inline-block;
+			clear: both;
+			visibility: hidden;
+			line-height: 0;
+			height: 0;
+		}
+
+
+		.leftpart{
+				/*border:2px #000 solid;*/
+				width: 500px;
+				height: 500px;
+				float:left;
+				position: relative;
+				left:20px;
+				top:100px;
+			}
+		
+
+		.leftbigpic{
+				/* border:2px #000 solid;*/
+				
+				float:left;
+				position: relative;
+				left:20px;
+				top:20px;
+			}
+	
+			.leftul{
+				/*border:2px #000 solid;*/
+				
+				float:left;
+				position: absolute;
+				left:20px;
+				top:310px;
+			}
+			.leftli{
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				/*border:2px blue solid;*/
+							}
+			
+			.leftpic > a :hover {
+				margin:0;
+				border:2px #FF6203 solid;
+
+				position: relative;
+				left:0;
+				top:0;
+			}
+			.leftpic > a >img {
+				display: inline-block;
+				width: 50px;
+				height: 50px;
+				margin:2px;
+				position: relative;
+				left:0;
+				top:0;
+			}
+			a {
+				text-decoration: none;
+			}
+
+			.menu {
+				list-style: none;
+				display:block;
+				background: blue;
+				padding:15px 0px 15px 200px;
+
+			}
+			.menu > li {
+				float: left;
+				
+			}
+			.menu > li > a {
+				color: #fff;
+				
+				padding:15px 20px 15px 20px;
+		
+			}
+			.menu > li > a:hover {
+				background: yellow;
+				color:blue;
+				padding:15px 20px 15px 20px;
+			}
+			.head1{
+				display:inline-block;
+				color:skyblue;
+				font-family: 宋体；
+				width: 500px;
+				height: 80px;
+				position: relative;
+				top:10px;
+				left:500px;
+
+			}
+
+
+
+		</style>
+	</head>
+	<body>
+	<h1 class=head1>官方旗舰店</h1>
+	
+    <ul class="menu clearfix">
+			<li><a href="#">所有分类</a></li>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">所有宝贝</a></li>
+			<li><a href="#">镇店之宝</a></li>
+			<li><a href="#">新品上市</a></li>
+			<li><a href="#">新品推荐</a></li>
+			<li><a href="#">跑步神器</a></li>
+			<li><a href="#">户外运动</a></li>
+		</ul>
+
+
+
+
+	<div class="leftpart clearfix">
+
+
+	<div class=leftbigpic>
+		<img src="images/pic0.jpg"/>
+
+	</div>
+
+		<ul class=leftul>
+
+            <li class=leftli>
+                <div class=leftpic>
+                    <a href="#"><img src="images/pic1.jpg"/></a>
+                </div>
+            </li>
+
+        
+
+            <li class=leftli>
+                 <div class=leftpic>
+                    <a href="#"><img src="images/pic2.jpg"/></a>
+                </div>
+            </li>
+
+              <li class=leftli>
+                 <div class=leftpic>
+                    <a href="#"><img src="images/pic3.jpg"/></a>
+                </div>
+            </li>
+
+              <li class=leftli>
+                 <div class=leftpic>
+                    <a href="#"><img src="images/pic4.jpg"/></a>
+                </div>
+            </li>
+
+              <li class=leftli>
+                 <div class=leftpic>
+                    <a href="#"><img src="images/pic5.jpg"/></a>
+                </div>
+            </li>
+
+
+    </ul>
+
+    </div>
+	
+	</body>
+</html>
