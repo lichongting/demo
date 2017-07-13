@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>这是一个宝贝页面</title>
+        <link href="https://img.alicdn.com/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+        <style type="text/css">
+            .clearfix:after{
+                content: ".";
+                display: block;
+                clear: both;
+                visibility: hidden;
+                line-height: 0;
+                height: 0;
+            }
+            
+            .clearfix{
+                display: inline-block;
+            }
+            
+            html[xmlns].clearfix{
+                display: block;
+            }
+           
+            *html.clearfix{
+                height: 1%;
+            }
+
+            .box-1{
+                float: left;
+                margin-top: 50px;
+                margin-left: 100px;
+            }
+      
+            .box-1-2{
+                float: left;
+                padding: 0 12px;
+            }
+            
+            .box-1-2 > a{
+                display: inline-block;  
+                border: 1px solid white;
+            }
+
+            .box-1-2 > a:hover{
+                border: 1px solid black;
+            }
+
+            .box-2{
+                float: left;
+                margin-top: 50px;
+                margin-left: 10px;
+            }
+
+            .box-2-1{
+                color: black;
+                font-size: 20px;
+            }
+            
+            .box-2-2{
+                color: red;
+                font-size: 19px;
+            }
+           
+            .box-2-3{
+                background-color: whitesmoke;
+            }
+          
+            .box-2-3-1{
+                font-size: 17px;
+                color: black;
+                text-decoration: line-through;
+            }
+          
+            .box-2-3-2{
+                font-size: 17px;
+                color: red;
+
+            }
+           
+            .box-2-3-3{
+                font-size: 22px;
+                color: red;
+                font-weight: bold;
+            }
+
+            a{
+                text-decoration: none;
+            }
+
+            .box-2-5{
+                margin: 35px 0;
+            }
+
+            .box-2-5-1{
+                list-style: none;
+                position: absolute;
+                left: 575px;
+                top: 235px;
+            }
+
+            .box-2-5-1 > li{
+                float: left; 
+                margin-right: 20px;
+                margin-top: 20px;
+            }
+
+            .box-2-5-1 > li > a{
+                color: black;
+                padding: 5px 8px;
+                border: 1px solid white;
+            }
+
+            .box-2-5-1 > li > a:hover{
+                border: 1px solid orangered;
+            }
+            
+            .box-2-6-1{
+                display: inline-block;
+               
+            }
+
+            .box-2-6-2{
+                display: inline-block;
+                border: 1px solid gray;
+                background-color: whitesmoke;
+                padding: 1px 9px;
+                font-size: 20px;
+                position: absolute;
+                left: 625px;
+                top: 325px;
+            }
+
+            .box-2-6-3{
+                display: inline-block;
+                border: 1px solid gray;
+                background-color: whitesmoke;
+                padding: 3.5px 8px;
+                position: absolute;
+                left: 650px;
+                top: 325px;
+            }
+
+            .box-2-6-4{
+                display: inline-block;
+                border: 1px solid gray;
+                background-color: whitesmoke;
+                padding: 1px 8px;
+                font-size: 20px;
+                position: absolute;
+                left: 690px;
+                top: 325px;
+            }
+
+            .box-2-7{
+                display: inline-block;
+                margin: 20px 50px;
+                padding: 10px 20px;
+                border: 2px solid red;
+                color: red;
+                background-color: #FCCCCC;
+            }
+
+            .box-2-8{
+                display: inline-block;
+                margin: 20px 50px;
+                padding: 10px 20px;
+                color: white;
+                background-color: #FF0000;
+            }
+
+  
+        </style>
+    </head>
+
+    <body>
+       
+        <div class="clearfix">
+
+        <div class="box-1">
+            <div class="box-1-1"><img src="big.png"/></div>
+		    <div class="box-1-2"><a href="#"><img src="s1.jpg"/></a></div>
+			<div class="box-1-2"><a href="#"><img src="s2.jpg"/></a></div>
+		    <div class="box-1-2"><a href="#"><img src="s3.jpg"/></a></div>
+			<div class="box-1-2"><a href="#"><img src="s4.jpg"/></a></div>
+	    	<div class="box-1-2"><a href="#"><img src="s5.jpg"/></a></div>          
+        </div>
+
+        <div class="box-2">
+            <div class="box-2-1"><strong>英爵伦 男士短袖T恤 夏季体恤 男装2017新款修身衣服男生潮牌上衣</strong></div>
+            <div class="box-2-2">95%棉 打底柔软舒适 外穿简约时尚</div>
+           
+            <div class="box-2-3">全天猫实物商品通用<br/>
+                价格：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¥
+                <span class="box-2-3-1">115.00</span><br/>
+                促销价：&nbsp;&nbsp;&nbsp;
+                <span class="box-2-3-2">¥</span>
+                <span class="box-2-3-3">68.00</span>
+                <img src="price.png">
+            </div>
+
+            <div class="box-2-4">
+                <form action="https://www.baidu.com" method="get">
+                    <label><br/>运费：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;广东广州&nbsp;至&nbsp;</label>
+                    <select name="province">
+                        <optgroup label="广东">
+                            <option value="gz">广州</option>
+                            <option value="st">汕头</option>
+                            <option value="sw">汕尾</option>
+                            <option value="zs">中山</option>
+                        </optgroup>
+                        <optgroup label="四川">
+                            <option value="cd">成都</option>
+                            <option value="nc">南充</option>
+                            <option value="my">绵阳</option>
+                            <option value="dy">德阳</option>
+                        </optgroup>
+                    </select>
+                    <label>&nbsp;&nbsp;快递&nbsp;&nbsp;0.00<br/></label>
+                </form>
+            </div>
+            <div  class="box-2-5">
+               <br/><span>尺码：</span>
+               <ul class="box-2-5-1 clearfix">
+                   <li><a href="#">165/S</a></li>
+                   <li><a href="#">170/M</a></li>
+                   <li><a href="#">175/L</a></li>
+                   <li><a href="#">180/XL</a></li>
+                   <li><a href="#">185/XXL</a></li>
+               </ul>
+            </div>
+            
+            <div class="box-2-6">
+                <div class="box-2-6-1">数量：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="box-2-6-2">-</div>
+                <div class="box-2-6-3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0</div>
+                <div class="box-2-6-4">+</div>
+            </div>
+            
+            <div><br/><br/><br/><br/><br/></div>
+
+            <div class="box-2-7">
+                立刻购买
+            </div>
+
+            <div class="box-2-8">
+                加入购物车
+            </div> 
+        </div>
+
+        </div>
+    </body>
+</html>
